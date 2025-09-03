@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #39464f;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 8vh;
+    font-size: 4vw;
+    font-family:monospace;
+    font-weight: bold;   
+}
+
+#bodi{
+    display: flex;
+    overflow:visible;
+}
+aside{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 63vh;
+    width: 20vw;
+    background-color: #123160;
+    border-radius: 20px;
+    margin: -10px -20px 0px 0px;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100px;
+}
+section{
+    position: relative;
+    height: 60vh;
+    width: 30vw;
+    background-color: #1f282f;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+#upper,#lower{
+    flex-grow: 1;
+}
+#upper{
+    text-align: center;
+    margin-top: 5vh; 
+    font-size: 3vh;
+    font-weight:normal;
+}
+#upper #date{
+    font-weight: bold;
+}
+#place {
+    color:none;
+    text-shadow: 0px 0px 10px #ffd700;
+
+}

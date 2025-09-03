@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <aside>
+            <div id = 'dates'>
+                <h2 id = 'date'></h2>
+                <h4 id = 'day'></h4>
+                <h4 id ='place'></h4>
+            </div>
+            <i id = 'main_icon' class=""></i>
+            <h1 id = 'temp'></h1>
+            <h3 id = 'weather'></h3>
+        </aside>
+        <article>
+            <div id = 'statistics'>
+                <p >feels like<span id="feel"></span></p>
+                <p >Humidity<span id = 'humid'></span></p>
+                <p >Wind speed<span id = 'wind'></span></p>
+            </div>
+            <div id = 'nextdays'>
+                <div>
+                    <i id = 'day1_icon' class="fa-regular fa-sun subicon"></i>
+                    <p id="weekday1"></p>
+                    <p id="temp1"></p>
+                </div>
+                <div>
+                    <i id = 'day2_icon' class="fa-regular fa-sun subicon"></i>
+                    <p id="weekday2"></p>
+                    <p id="temp2"></p>
+                </div>
+                <div>
+                    <i id = 'day3_icon' class="fa-regular fa-sun subicon"></i>
+                    <p id="weekday3"></p>
+                    <p id="temp3"></p>
+                </div>
+                <div id = 'day4'>
+                    <i id = 'day4_icon' class="fa-regular fa-sun subicon"></i>
+                    <p id="weekday4"></p>
+                    <p id="temp4"></p>
+                </div>
+                
+            </div>
+            <input id = 'location' type="text" placeholder="Place">
+            <button id = 'search' onclick="searchcity()">Search location</button>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

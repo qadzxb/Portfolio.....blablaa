@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+</head>
+<body>
+    <!-- Phone Header -->
+    <header id = 'main_header_b'>
+        <a class = 'icon' href="">
+            <img src="logo.jpg" alt="">
+            MINHBODOI
+        </a>
+        <button id="menubtn" onclick="Openmenu()"><i id ='iconbtn' class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- Phone Menu -->
+    <div id = 'menu'>
+        <a style="color: #ff7fca;" href="">Home</a>
+        <a href="#second_main">About</a>
+        <a href="#third_main">Servies</a>
+        <a href="#Myportfolio">Portfolio</a>
+        <a href="#blog">Inspired Blog</a>
+        <a href="#contact">Contact</a>
+        
+    </div>
+
+    <!-- PC Menu -->
+
+    <div id = 'pcmenu' class="pcmenu">
+        <a class="icon" href="">
+            <img src="logo.jpg" alt="">
+            MINHBODOI
+        </a>
+        <a style="color: #ff7fca;" href="" id = 'pchome' class="underline">Home</a>
+        <a href="#second_main" class="pcAnchor underline">About</a>
+        <a href="#third_main" class="pcAnchor underline">Servies</a>
+        <a href="#Myportfolio" class="pcAnchor underline">Portfolio</a>
+        <a href="#blog" class="pcAnchor underline" style="width: 200px;">Inspired website</a>
+        <a href="#contact" class="pcAnchor underline">Contact</a>
+    </div>
+    
+    <main>
+        <!-- FIRST MAIN -->
+        <div id = 'first_main'>
+            <article>
+                <i><img src="" alt=""></i>
+                <p id="greet">HI !</p>
+                <h1 class="bluetext">I AM NGUYEN CANH MINH</h1>
+                <h3 class="bluetext">VNUA Software Engineering Student</h3>
+                <a class="linkicon" href=""><i class="fa-solid fa-house"></i></a>
+                <a class="linkicon" href="https://www.facebook.com/nguyen.canh.minh.897173/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a class="linkicon" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a class="linkicon" href="https://www.instagram.com/ncming.05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#Myportfolio" class="workbtn">
+                        See My work
+                    </a>
+                <div id="numscontain">
+                    <div class="nums" style="margin-left: 0;">
+                        <p class="gradientNum">3+</p>
+                        <p >Programming languages</p>
+                    </div>
+                
+                    <div class="nums">
+                        <p class="gradientNum">0.0</p>
+                        <p >IELTS</p>
+                    </div>
+
+                    <div class="nums">
+                        <p class="gradientNum">2.5/4</p>
+                        <p >Most recent semester GPA</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- SECOND MAIN -->
+        <div id = 'second_main'>
+            <img src="Pics/smallBubble2.jpg" alt="" />
+            <article>
+                <p id = 'about'>About me</p>
+                <h1 class="bluetext">Aspiring Full Stack Web Developer</h1>
+                <p style="font-weight: lighter;">
+                    Enthusiastic junior at VNUA, aspiring Full Stack Web Developer fluent in three programming languages. Passionate about merging technical expertise with creativity to craft captivating web solutions.
+                    Eager to collaborate and innovate in the dynamic field of web development.
+                </p>
+                <a class="workbtn" href="#blog" id = 'secondbtn'>INSPIRED website</a>
+            </article>
+        </div>
+        <div id = 'third_main'>
+            <p class="title">My Services</p>
+            <div>
+
+                <article class="third_article">
+                    <img src="Pics/s1.png.webp" alt="" />
+                    <h3>Web Development</h3>
+                    <p>I have the ability to design and develop dynamic and static websites, from personal websites to business websites.</p>
+                </article>
+
+                <article class="third_article">
+                    <img src="Pics/editIcon.png" alt="" />
+                    <h3>Editing and Optimization</h3>
+                    <p>In addition to developing from scratch, I also have experience in editing and optimizing existing websites.</p>
+                </article>
+
+                <article class="third_article">
+                    <img src="Pics/Solving.png" alt="" />
+                    <h3>Problem Solving</h3>
+                    <p>
+                        Performance Enhancement and Algorithm Optimization:
+                        Identify and resolve performance bottlenecks for faster website speed. Streamline data processing, improve search functionality, and enhance user interaction.
+                    </p>
+                </article>
+        
+            </div>
+        </div>
+        <div class="portfolio" id="Myportfolio">
+            <p class="title" style="color: hsl(0, 0%, 50%);">My Portfolio</p>
+            <h1 class="portfolio">Check Out My Recent Work</h1>
+            <div id = 'projects'>
+
+                <div class="htmlfile">
+                    <p>My First Project</p>
+                    <iframe id="vuait" src="FirstProject/vuait.html"></iframe>
+                </div>
+
+                <div style="overflow: visible;" id="secondWeb" class="htmlfile">
+                    <p>Current Time</p>
+                    <iframe id="currentClock" src="Weather/index.html"></iframe>
+                </div>
+
+            </div>
+
+            <div style="overflow: visible;" class="htmlfile">
+                <p>Stop Watch</p>
+                <iframe id="stopwatch" src="CountClock/index.html"></iframe>
+            </div>
+        
+        </div>
+        <div id = 'blog'>
+            <p class="title" style="color: hsl(0, 0%, 50%);">My Inspired websites</p>
+            <h1 >Latest Story From Their Blog</h1>
+            <article>
+                <div class="blog">
+                    <div class="innerPic">
+                        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/itsolution-free-template-408x322.jpg" alt="" />
+                    </div>
+                    <p>
+                        <i class="fa-regular fa-user"></i><span>Colorlib</span>
+                        <i class="fa-regular fa-calendar"></i><span>January 2024</span></p>
+                    <a href="https://colorlib.com/wp/template/it-solution/" target="_blank">
+                        <h3>IT Solution</h3>
+                    </a>
+                    <p class="blogtext" style="text-transform: unset;">
+                        IT Solution is a modern, professional, and sophisticated IT company website template. If you would like to take your business to new heights, you better sort out the online presence with IT Solution.
+                    </p>
+                </div>
+                <div class="blog">
+                    <div class="innerPic">
+                        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/hvacompany-free-template-408x322.jpg" alt="" />
+                    </div>
+                    <p>
+                        <i class="fa-regular fa-user"></i> <span>Colorlib</span>
+                        <i class="fa-regular fa-calendar"></i> <span>January 2024</span></p>
+                    <a href="https://colorlib.com/wp/template/hvacompany/" target="_blank"><h3>HvaCompany</h3></a>
+                    <p class="blogtext" style="text-transform: unset;">
+                        HvaCompany is the HVAC website template that will serve you well. With the professional look, top performance, and heaps of features, you can raise your potential efficiently.
+                    </p>
+                </div>
+                <div class="blog">
+                    <div class="innerPic">
+                        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/libro-free-template-408x322.jpg" alt="" />
+                    </div>
+                    <p>
+                        <i class="fa-regular fa-user"></i> <span>Colorlib</span>
+                        <i class="fa-regular fa-calendar"></i><span>January 2024</span></p>
+                    <a href="https://colorlib.com/wp/template/libro/" target="_blank"><h3>Libro</h3></a>
+                    <p class="blogtext" style="text-transform: unset;">
+                        Libro is the one unique blog website template that will spark your interest. It is not the style of a blog you see daily that comes exceptionally rewarding.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div id="icon">
+            <a href="https://vnua.edu.vn/" id="firstid" target="_blank">
+                <img src="Pics/Logo.png" alt="" />
+                
+            </a>
+            <a href="https://colorlib.com/wp/" target="_blank">
+                <img src="Pics/colorlib-logo-top.webp " alt="" />
+            </a>
+            <a href="https://fita.vnua.edu.vn/" target="_blank">
+                <img src="Pics/FITA.png" alt="" />
+            </a>
+        </div>
+    </main>
+
+    <footer id = 'contact'>
+        <i></i>
+        <div id="footerlogo">
+            <img src="Pics/logo.jpg" alt="" />
+            <h1>Minhbodoi</h1>
+        </div>
+        <div id="footercontact">
+            <a href="https://www.facebook.com/nguyen.canh.minh.897173/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/ncming.05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>This template is inspired by <a href="https://colorlib.com/wp/" target="_blank">Colorlib</a></p>
+        <p>Coded by my friend and "me"</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
